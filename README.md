@@ -42,7 +42,7 @@ this.code =
 
 Your code will then be wrapped in an [Ace](http://ace.c9.io/) code editor.
 
-There are 6 additional options available:
+There are 7 additional options available:
 
 - `theme` is the theme of the syntax highlighting, [see all themes](https://github.com/ajaxorg/ace/tree/master/lib/ace/theme)
 - `mode` is the language of the code you are writing
@@ -50,6 +50,7 @@ There are 6 additional options available:
 - `softtabs` if set to true will insert spaces instead of tab characters
 - `wordwrap` will wrap the text onto the next line
 - `readonly` prevents the text from being changed
+- `onchange` fires when the text in the editor changes and is passed the value of the editor
 
 *This tag relies on Ace code editor. Ensure you have a script link to their code on the page. e.g.*
 
