@@ -1,0 +1,39 @@
+{
+  "name": "riotgear-code",
+  "version": "0.1.0",
+  "description": "Ace code editor",
+  "main": "dist/rg-code.min.js",
+  "scripts": {
+    "lint": "jshint . --exclude-path=.gitignore",
+    "riot": "riot src dist/rg-code.js --type es6",
+    "postriot": "riot demo --type es6",
+    "uglify": "uglifyjs --output dist/rg-code.min.js -- dist/rg-code.js",
+    "build": "npm run riot && npm run uglify"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RiotGear/rg-code.git"
+  },
+  "keywords": [
+    "riotjs",
+    "riot",
+    "component",
+    "ace",
+    "code"
+  ],
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RiotGear/rg-code/issues"
+  },
+  "homepage": "https://github.com/RiotGear/rg-code",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "jshint": "^2.7.0",
+    "riot": "~2.2.2",
+    "uglify-js": "^2.4.21"
+  }
+}
