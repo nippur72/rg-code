@@ -22,7 +22,7 @@
 					editor.setValue(oReq.responseText)
 					this.update()
 				}
-				oReq.open('get', opts.src, opts.async || true)
+				oReq.open('get', opts.src, true)
 				oReq.send()
 			} else {
 				editor.setValue(opts.code)

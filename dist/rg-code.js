@@ -20,7 +20,7 @@ this.on('mount', function () {
 				editor.setValue(oReq.responseText);
 				_this.update();
 			};
-			oReq.open('get', opts.src, opts.async || true);
+			oReq.open('get', opts.src, true);
 			oReq.send();
 		})();
 	} else {
