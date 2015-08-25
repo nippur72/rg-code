@@ -50,3 +50,7 @@ There are 6 additional options available:
 - `softtabs` if set to true will insert spaces instead of tab characters
 - `wordwrap` will wrap the text onto the next line
 - `readonly` prevents the text from being changed
+
+*This tag relies on Ace code editor. Ensure you have a script link to their code on the page. e.g.*
+
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>`
